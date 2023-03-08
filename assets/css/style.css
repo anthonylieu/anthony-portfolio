@@ -1,0 +1,221 @@
+:root {
+  color: purple;
+  background-color: lightskyblue;
+}
+
+html {
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 62.5%;
+}
+
+body {
+  /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  /* 4rem = 40px (4 * 10px) */
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+header {
+  padding: 10px 35px;
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--primary-color);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+header nav ul li a:hover {
+  color: var(--tertiary-color);
+  border-bottom: 2px solid var(--tertiary-color);
+}
+
+/* profile */
+
+.profile {
+  background-image: url("../imgs/hero.png");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 600px;
+  width: auto;
+  margin: auto;
+}
+
+/* about me */
+#about {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* work */
+#work {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* surfreport */
+
+.surfreport {
+  background-image: url("../imgs/surfreport.jpg ");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 600px;
+  width: auto;
+  margin: auto;
+}
+.surfreport h3 {
+  text-shadow: 1px 0 0 #000, 0 -1px #000, 1px 0 0 #000, 0 -1px #000;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3px;
+}
+.surfreport:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+/* placeholder */
+
+.placeholder {
+  background-image: url("../imgs/comingsoon.jpg ");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 200px;
+  width: auto;
+  margin: 1.5rem;
+}
+
+footer {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.row {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  width: 80%;
+  margin: auto;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
