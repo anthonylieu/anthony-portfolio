@@ -6,4 +6,4 @@ https://anthonylieu.github.io/anthony-portfolio/
  <br>Made it simple for employer to get in contact with me.</br>
  <br>Showed my eligibility as a candidate for an employer.</br>
  
- ![_C__Users_Anthony_bootcamp_anthony-lieu-portfolio_index html (1)](https://user-images.githubusercontent.com/38957648/223635392-58f28f5a-a1ed-41c2-900a-358661b61c34.png)
+![_C__Users_Anthony_bootcamp_anthony-portfolio_index html](https://user-images.githubusercontent.com/38957648/227306644-28cf878b-1777-4091-8980-222c113d4d01.png)
