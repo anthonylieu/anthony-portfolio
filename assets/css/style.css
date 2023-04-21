@@ -158,6 +158,20 @@ header nav ul li a:hover {
   transition: 0.3s;
 }
 
+/* Marvel Database */
+.marvelCharacterDatabase {
+  background-image: url("../imgs/marvelCharacterDatabase.jpg ");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 200px;
+  width: auto;
+  margin: 1.5rem;
+}
+
 /* placeholder */
 
 .placeholder {
@@ -183,7 +197,7 @@ footer {
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
-  flex-direction: row; 
+  flex-direction: row;
   margin-left: -1.5rem;
   margin-right: -1.5rem;
   width: 80%;
